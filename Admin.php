@@ -16,10 +16,7 @@
                 <ul>
                    
                     <li><a href="Books.php" >Books</a></li>
-                    <li><a href="Books.php" >Books</a></li>
-                    <li><a href="Books.php" >Books</a></li>
-                    <li><a href="Books.php" >Books</a></li>
-                    <li><a href="Books.php" >Books</a></li>
+                   
                 </ul>
                 &nbsp;
             </div>

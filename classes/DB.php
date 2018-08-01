@@ -86,14 +86,35 @@ class DB {
             $values = '';
             $x=1;
             foreach($fields as $field){
-                $values = '?';
-                if($x<count($field)){
+                $values .= '?';
+                if($x < count($fields)){
                     $values .=', ';
                     
                 }
                 $x++;
             }
            
+            $sql = "INSERT INTO  {$table }( `" . implode('`, `', $keys) . "`) VALUES ({$values})";
+            if(!$this->query($sql, $fields)){
+                return TRUE;
+            }
+        }
+        return FALSE;
+    }
+    public function update($table, $id, $fields){
+        $set = '';
+        $x = 1;
+        foreach ($fields as $name => $value){
+            $set .="{$name} = ?";
+            if($x < count($fields)){
+                $set .=',';
+            }
+            $x++;
+        }
+        
+        $sql = "UPDATE {$table} SET {$set} WHERE id = {$id}" ;
+        if(!$this->query($sql, $fields)->error()){
+            return true;
         }
     }
 

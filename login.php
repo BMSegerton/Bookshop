@@ -1,12 +1,6 @@
 <?php
 
-require_once 'core/init.php';
-if(Input::exists()){
-    echo  Input::get('username'), Input::get('password');
-   
-}else{
-    echo 'not submitted';
-}
+
 ?>
 <html>
 <head>
@@ -17,7 +11,7 @@ if(Input::exists()){
     <div class="login-box">
     <img src="img/avatar.png" class="avatar">
         <h1>Login Here</h1>
-        <form action="" method="post">
+        <form action="validateuser.php" method="post">
             <p>Username</p>
             <input type="text" name="username" placeholder="Enter Username">
             <p>Password</p>

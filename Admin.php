@@ -1,3 +1,9 @@
+<?php
+require_once 'core/init.php';
+if(!Session::exists('user')){
+    Redirect::to('login.php');
+}
+?>
 <!DOCTYPE html >
 <html lang="en">
     <head>
@@ -15,7 +21,7 @@
             <div id="navigation">
                 <ul>
                    
-                    <li><a href="Books.php" >Books</a></li>
+                    <li><a href="#main" >Books</a></li>
                    
                 </ul>
                 &nbsp;

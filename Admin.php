@@ -21,7 +21,7 @@ if(!Session::exists('user')){
             <div id="navigation">
                 <ul>
                    
-                    <li><a href="#main" >Books</a></li>
+                  
                    
                 </ul>
                 &nbsp;
@@ -30,10 +30,11 @@ if(!Session::exists('user')){
                 <h2>Admin Menu</h2>
                 <p>Welcome to Admin area</p>
                 <ul>
-                    <li><a href="manage_content.php">Manage Website content</a></li>
-                     <li><a href="manage_admins.php">Manage Website content</a></li>
-                      <li><a href="logout.php">Manage Website content</a></li>
-                        <li><a href="logout.php">Manage Website content</a></li>
+                    <li><a href="add_books.php">Add Books</a></li>
+                    <li><a href="delete_books.php">Delete Books</a></li>
+                    <li><a href="view_books.php">View Books</a></li>
+                    <li><a href="login.php">log Out</a></li>
+                    <li><a href="addUsers">Add users</a></li>
                 </ul>
             </div>
         </div>

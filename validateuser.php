@@ -7,6 +7,6 @@ if(Input::exists()){
     if($login){
         Redirect::to('Admin.php');
     } else {
-        echo '<p>Sorry logging in failed  </p>';
+        echo '<p><h1>Sorry logging in failed  </h1></p>';
     }
 }

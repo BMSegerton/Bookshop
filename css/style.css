@@ -11,7 +11,7 @@ and open the template in the editor.
 body{
     margin: 0;
     padding: 0;
-    background: url(img/image.jpg);
+    background-color: green;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;

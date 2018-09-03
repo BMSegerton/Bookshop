@@ -26,21 +26,23 @@ require_once 'core/init.php';
                 &nbsp;
             </div>
             <div id="page">
-              <table>
+              <table >
                     <tr>
-                        <th>isbn</th>
-                        <th>author</th>
-                        
+                        <th width="170">Isbn</th>
+                        <th width="200">Author</th>
+                        <th width="250">Title</th>
+                        <th width="350">Description</th>
+                        <th width="60">price</th>
                     </tr>
                 </table>
                
                 <?php 
                 $books = DB::getInstance()->query("SELECT * FROM books");
-                echo '<table>';
+                echo '<table border="4" bgcolor="#efefef">';
                 
                 if($books->count()){
                     foreach ($books->results() as $books){
-                    echo "<tr><td>\n" .$books->isbn ."</td><td>\n" .$books->author . " \n</td></tr>" ;
+                    echo "<tr><td>\n" .$books->isbn ."</td><td>\n" .$books->author ."</td><td>\n" .$books->title . "</td><td>\n" .$books->description ."</td><td>\n" .$books->price ." \n</td></tr>" ;
                 }
                 }
                 echo '</table>';

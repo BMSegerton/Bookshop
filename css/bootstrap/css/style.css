@@ -1,0 +1,276 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 2, 2018, 1:00:06 PM
+    Author     : NUR
+*/
+
+body{
+
+	padding:0; margin:0;
+	background:#F5F5F5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+
+
+}
+
+container {
+	width:80%;
+
+	background-image:
+	url(images/imagesnyc.jpg) ;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+}
+container h2{ color:seagreen;}
+container h3{ color:seagreen;}
+
+.maincontent{ width:90%; overflow:hidden; margin-left:auto; margin-right:auto; background:#FFF;}
+
+header{ background-image:url(images/Capture1.PNG);width:90%; height: 100px; margin-left:auto; margin-right:auto; padding-top:8px;
+	margin-top:21px;}
+navbar {width:90%;background:seagreen;margin-left:auto; margin-right:auto;height:50px;
+	font:15px Georgia; }
+
+content_area{
+width:60%;height:auto;float:left; background:white;margin-left:3%;}
+.area{ width:90%;
+		margin-left:auto;
+		margin-right:auto;
+		padding:3%;
+		background:#F5F5F5;
+		margin-top:10px;
+		text-align:justify;
+		overflow:hidden;
+		margin-bottom:10px;}
+.area img{ float:left; padding-right:10px;}
+
+#home-content{margin-left}
+0
+
+footer{width:90%;height:45px;background:seagreen;clear:both;
+        margin-left: auto;margin-right: auto;}
+hh{float:left;
+	width:68%;
+
+	}
+logo{float:left;width:2;}
+name{float:right; width:auto;}
+banner{float:right;width:auto;}
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:90%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#2E8B57;
+}
+
+.menu {
+    width:90%;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    color:#FFFFFF;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#2E8B57;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+
+.menu > ul > li > a {
+    padding:10px 20px;
+    display:inline-block;
+	text-decoration:none;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#FFFFFF;
+}
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:170%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2E8B57;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#FFFFFF;
+}/* CSS Document */
+
+
+
+hist{margin-left: auto;
+	margin-right: auto;
+	width:80%;
+
+
+	height:auto;
+	background:white;
+	font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #3C3C3C;
+	text-align:justify;
+}
+
+about{margin-left:auto;
+		margin-right:auto;
+		width:90%;
+		color: #3C3C3C;
+		height:auto;
+		background:#FFF;
+		overflow:hidden;}
+about h1{ color:#2c9688;}
+.row{ width:90%;}
+.col-2{ width:40%; float:left; margin-left:10%; text-align:justify;}
+
+
+
+
+
+
+tbstyle{background:url(images/images6.jpg)
+}
+a_content{width:59.4%;height:auto;border-right:1px solid black;float:left;background:white;margin-left:10%;}
+act-main{
+	margin-left: auto;
+	margin-right: auto;
+	text-align:justify;
+	padding:2%;
+
+	}
+act-main h1{
+color: #2c9688;
+}
+act-main  img
+ {
+	border: 1px solid #2c9688;
+	margin-bottom: 20px;
+
+}
+act-content{width:25%;
+	float:right;
+	background:white;
+	margin-right: auto; margin-left:auto;
+	padding:2%;
+	line-height:35px;
+	font-size:20px;
+
+	 }
+	#act-content h2
+ {
+	color: #2c9688;
+	font-size:20px;
+	font-weight: normal;
+
+ }
+ act{list-style-type:none;
+ 	margin:0;
+ 	padding:0;}
+
+
+act-content li a
+{
+	color: #5a4535;
+	display: inline-block;
+
+	text-decoration: none;
+	line-height:20px;
+}
+.upcoming{ width:100%; margin:5px; height:100%; padding:2px; text-height:20px; font-size:20px;}
+.upcominga-ct{ margin:5px; height:100%; padding:2px; text-height:20px; font-size:20px;}
+.upcoming a{ padding-left:10px; text-decoration:none; color:#633;}
+contact{
+	background-color:white;
+	height:600px;
+	width:90%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:-20px;}
+address{
+	margin-left:10%;}
+contact p span
+{
+	display: block;
+	text-transform: uppercase;
+}
+.row1{ width:90%; background-color:#FFF; overflow:hidden; margin-left:auto; margin-right:auto; padding-bottom:20px;}
+.col-4{ float:left;
+		width:28%;
+		padding-left:2%;
+		padding-right:2%;
+		text-align:justify;}
+#heading{ background:#033;
+		width:100%;
+		height:auto;
+		color:#FFF;
+		margin-left:auto;
+		margin-right:auto;
+
+}
+
+heading h3{ font-size:32px;
+		padding-top:10px;
+		padding-bottom:10px;}
+heading h2{ font-size:20px;
+		padding-top:10px;
+		padding-bottom:10px;}
+		.a_area{ margin-left:auto; margin-right:auto; width:80%; background-color:#EDEBD8; height:80px; padding:30px;}
+               

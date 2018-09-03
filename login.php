@@ -4,7 +4,7 @@
 ?>
 <html>
 <head>
-    <title> Transparent Login Form Design </title>
+    <title> EGERTON BOOKSHOP MANAGEMENT SYSTEM</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">   
 </head>
     <body>
@@ -13,9 +13,9 @@
         <h1>Login Here</h1>
         <form action="validateuser.php" method="post">
             <p>Username</p>
-            <input type="text" name="username" placeholder="Enter Username">
+            <input type="text" name="username" placeholder="Enter Username" required="required">
             <p>Password</p>
-            <input type="password" name="password" placeholder="Enter Password">
+            <input type="password" name="password" placeholder="Enter Password" required="required">
             <input type="submit" name="submit" value="Login">
             <a href="#">Forget Password</a>    
             </form>

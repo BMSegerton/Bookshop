@@ -21,7 +21,7 @@ a:hover { color: #1A446C; }
 #header { 
 	height: 50px; 
 	margin: 0; padding: 0; text-align: left; 
-        background: #1A446C; color: #D4E6F4;
+        background-color:#20630F ; color: #D4E6F4;
 }
 #header h1 { padding: 5px; margin: 0; text-align: center }
 #main { 
@@ -33,7 +33,7 @@ a:hover { color: #1A446C; }
 	clear: both;
 	height: 2em; margin: 0; padding: 1em; 
 	text-align: center; 
-         background: #1A446C;  color: #D4E6F4;
+         background-color:#20630F;  color: #D4E6F4;
 }
 
 /* Navigation */
@@ -41,7 +41,7 @@ a:hover { color: #1A446C; }
 	float: left;
 	width: 150px; height: 100%; 
 	margin: 0; padding: 0 2em; 
-	color: #D4E6F4; background: #8D0D19;
+	color: #D4E6F4; background-color: #41423B;
 }
 #navigation a { color: #D4E6F4; text-decoration: none; }
 #navigation a:hover { color: #FFFFFF; }

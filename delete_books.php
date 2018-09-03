@@ -19,20 +19,12 @@ if(Input::exists('post')){
     $title = Input::get('title');
     $category = Input::get('category');
     $price = Input::get('price');
-     $year_published = Input::get('year_published');
-    $description = Input::get('description');
    
-
-    $db = DB::getInstance()->insert('books', array(
-        'isbn' => $isbn,
-        'author' => $author,
-        'title' => $title,
-        'catid' => $category,
-        'price' => $price,
-        'description' => $description,
-        'year_published' => $year_published
+    $db = DB::getInstance()->delete('books', array(
+        'isbn', '=', $isbn
+       
 ));
-$msg = "successfully added";
+$msg = "successfully deleted";
     echo $msg;
     } catch (Exception $ex) {
         echo $ex;
@@ -73,20 +65,17 @@ $msg = "successfully added";
                         <p>isbn</p>
                         <input type="text" name="isbn" placeholder="Enter isbn" maxlength="13" required="required">
                         <p>author</p>
-                        <input type="text" name="author" placeholder="Enter author" maxlength="30" required="required" >
+                        <input type="text" name="author" placeholder="Enter author" maxlength="30"  >
                         <p>title</p>
-                        <input type="text" name="title" placeholder="Enter title" maxlength="60" required="required">
+                        <input type="text" name="title" placeholder="Enter title" maxlength="60" >
                         <p>Category</p>
-                        <input type="text" name="category" placeholder="Enter category"  required="required">
+                        <input type="text" name="category" placeholder="Enter category"  >
                        
                         <p>price</p>
-                        <input type="text" name="price" placeholder="Enter price"  required="required">
-                         <p>Year Published</p>
-                        <input type="text" name="year_published" placeholder="Enter Year of Publication" maxlength="4" required="required">
+                        <input type="text" name="price" placeholder="Enter price" >
                         <p>description</p>
                         <textarea name="description" cols="20" rows="4" required="required"> </textarea>
-                       
-                        <input type="submit" name="submit" value="ADD">
+                        <input type="submit" name="submit" value="DELETE">
 
             </form>
              

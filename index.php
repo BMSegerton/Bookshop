@@ -120,7 +120,7 @@ if(!Session::exists('user')){
             <thead class="thead-dark">
                     <tr>
                         <th width="150">Isbn</th>
-                        <th width="200">Author</th>
+                        <th width="180">Author</th>
                         <th width="150">Title</th>
                         <th width="180">Description</th>
                         <th width="100">price</th>
@@ -136,7 +136,7 @@ if(!Session::exists('user')){
                 
                 if($books->count()){
                     foreach ($books->results() as $books){
-                    echo "<tr><td>\n" .$books->isbn ."</td><td>\n" .$books->author . "</td><td>\n" .$books->description ."</td><td>\n" .$books->price ." \n</td></tr>" ;
+                    echo "<tr><td>\n" .$books->isbn ."</td><td>\n" .$books->author . "</td><td>\n".$books->title ."</td><td>\n" .$books->description ."</td><td>\n" .$books->price ." \n</td></tr>" ;
                 }
                 }
                

@@ -17,7 +17,7 @@
             <p>Password</p>
             <input type="password" name="password" placeholder="Enter Password" required="required">
             <input type="submit" name="submit" value="Login">
-            <a href="#">Forget Password</a>    
+            
             </form>
         
         

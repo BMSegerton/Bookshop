@@ -35,6 +35,7 @@ if(!Session::exists('user')){
                     <li><a href="view_books.php">View Books</a></li>
                     <li><a href="logout.php">log Out</a></li>
                     <li><a href="addUsers.php">Add users</a></li>
+                     <li><a href="addcategories.php">Add categories</a></li>
                 </ul>
             </div>
         </div>

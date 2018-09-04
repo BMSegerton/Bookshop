@@ -25,7 +25,7 @@ if(Input::exists('post')){
        
 ));
 $msg = "successfully deleted";
-    echo $msg;
+    
     } catch (Exception $ex) {
         echo $ex;
 
@@ -78,7 +78,7 @@ $msg = "successfully deleted";
                         <input type="submit" name="submit" value="DELETE">
 
             </form>
-             
+             <?php echo $msg;?>
             </div>
         </div>
         <div id="footer">Copyright 2018, BMS</div>

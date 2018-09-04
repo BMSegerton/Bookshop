@@ -27,7 +27,7 @@ if(!Session::exists('user')){
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>EGERTON BOOKSHOP MANAGEMENT SYSTEM</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,10 +91,17 @@ if(!Session::exists('user')){
         
         
 <style>
-    .jumbotron{
+   .jumbotron{
     text-align: center;
     }
-    .
+    .form-inline{
+        float: right;
+        justify-content: center;
+        padding-top: 8px;
+    }
+    .navbar-inverse{
+        background-color: #20630F
+    }
 </style>
 
 
@@ -107,9 +114,9 @@ if(!Session::exists('user')){
                     <tr>
                         <th width="250">Isbn</th>
                         <th width="150">Author</th>
-                        <th width="250">Title</th>
-                        <th width="260">Description</th>
-                        <th width="60">price</th>
+                        <th width="150">Title</th>
+                        <th width="280">Description</th>
+                        <th width="100">price</th>
                     </tr>
                     </thead>
                 </table>
@@ -130,7 +137,7 @@ if(!Session::exists('user')){
             ));
                  echo '<table class="table" >';
                  if($db->count() == 0){
-                     echo"SORRY THAT TITLE IS NOT AVAILBLE";
+                     echo" <p> SORRY THAT TITLE IS NOT AVAILBLE </p>";
                  }  else {
                      
                  

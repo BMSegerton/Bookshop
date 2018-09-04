@@ -17,10 +17,11 @@ if(Input::exists('post')){
     $isbn = Input::get('isbn');
     $author = Input::get('author');
     $title = Input::get('title');
-    $category = Input::get('category');
+    $category= Input::get('categories');
     $price = Input::get('price');
      $year_published = Input::get('year_published');
     $description = Input::get('description');
+   
    
 
     $db = DB::getInstance()->insert('books', array(
@@ -32,8 +33,8 @@ if(Input::exists('post')){
         'description' => $description,
         'year_published' => $year_published
 ));
-$msg = "successfully added";
-    echo $msg;
+
+   
     } catch (Exception $ex) {
         echo $ex;
 
@@ -77,7 +78,21 @@ $msg = "successfully added";
                         <p>title</p>
                         <input type="text" name="title" placeholder="Enter title" maxlength="60" required="required">
                         <p>Category</p>
-                        <input type="text" name="category" placeholder="Enter category"  required="required">
+                        <select name="categories">
+                            <?php  $db = DB::getInstance()->query(' SELECT * FROM categories');        
+                             if($db->count() == 0){
+                                 echo "no categories";
+                             }  else {
+                                 foreach ($db->results() as $result){
+                                     echo "<option value = '$result->catid'>";
+                                     echo"$result->catname";
+                                      echo "</option>";
+                                 }
+                                
+                             }
+                             echo"</select>";
+                            ?>
+                       
                        
                         <p>price</p>
                         <input type="text" name="price" placeholder="Enter price"  required="required">
@@ -89,7 +104,10 @@ $msg = "successfully added";
                         <input type="submit" name="submit" value="ADD">
 
             </form>
-             
+             <?php echo $msg;
+            
+             ?>
+                
             </div>
         </div>
         <div id="footer">Copyright 2018, BMS</div>
